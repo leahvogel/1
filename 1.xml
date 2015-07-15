@@ -1,29 +1,48 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1" x="52" y="29">
+  <block type="movement_forward" id="4" x="50" y="138">
     <next>
-      <block type="movement_forward" id="4">
-        <next>
-          <block type="controls_whileUntil" id="2" inline="false">
-            <field name="MODE">WHILE</field>
-            <value name="NUMBER">
-              <block type="math_number" id="3">
-                <field name="NUM">1</field>
+      <block type="controls_whileUntil" id="2" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="math_number" id="3">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="robot_delay" id="17" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="24">
+                <field name="NUM">1800</field>
               </block>
             </value>
-            <statement name="DO">
-              <block type="robot_delay" id="17" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="24">
-                    <field name="NUM">1800</field>
-                  </block>
-                </value>
+            <next>
+              <block type="movement_right" id="34">
                 <next>
-                  <block type="movement_right" id="34"></block>
+                  <block type="controls_whileUntil" id="42" inline="false">
+                    <field name="MODE">WHILE</field>
+                    <value name="NUMBER">
+                      <block type="math_number" id="49">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="robot_delay" id="51" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="68">
+                            <field name="NUM">600</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_forward" id="61"></block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
                 </next>
               </block>
-            </statement>
+            </next>
           </block>
-        </next>
+        </statement>
       </block>
     </next>
   </block>
