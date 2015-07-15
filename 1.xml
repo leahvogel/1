@@ -13,22 +13,22 @@
             <next>
               <block type="controls_if" id="5" inline="false">
                 <value name="IF0">
-                  <block type="logic_compare" id="14" inline="true">
+                  <block type="logic_compare" id="6" inline="true">
                     <field name="OP">LT</field>
                     <value name="A">
-                      <block type="sensor_object" id="6">
+                      <block type="sensor_object" id="7">
                         <field name="OBJECT">LEFTFRONT</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_number" id="21">
+                      <block type="math_number" id="8">
                         <field name="NUM">60</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_stop" id="7"></block>
+                  <block type="movement_stop" id="9"></block>
                 </statement>
               </block>
             </next>
