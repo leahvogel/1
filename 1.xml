@@ -67,7 +67,30 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="movement_forward" id="123"></block>
+                                                  <block type="movement_forward" id="123">
+                                                    <next>
+                                                      <block type="controls_whileUntil" id="151" inline="false">
+                                                        <field name="MODE">WHILE</field>
+                                                        <value name="NUMBER">
+                                                          <block type="math_number" id="158">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO">
+                                                          <block type="robot_delay" id="160" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="177">
+                                                                <field name="NUM">600</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="movement_stutter" id="170"></block>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                      </block>
+                                                    </next>
+                                                  </block>
                                                 </next>
                                               </block>
                                             </statement>
