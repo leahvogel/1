@@ -27,24 +27,4 @@
       </block>
     </next>
   </block>
-  <block type="controls_if" id="5" inline="false" x="352" y="210">
-    <value name="IF0">
-      <block type="logic_compare" id="6" inline="true">
-        <field name="OP">LT</field>
-        <value name="A">
-          <block type="sensor_object" id="7">
-            <field name="OBJECT">LEFTFRONT</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="math_number" id="8">
-            <field name="NUM">60</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <statement name="DO0">
-      <block type="movement_stop" id="9"></block>
-    </statement>
-  </block>
 </xml>
