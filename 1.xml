@@ -11,30 +11,40 @@
               </block>
             </value>
             <statement name="DO">
-              <block type="controls_if" id="5" inline="false">
-                <value name="IF0">
-                  <block type="logic_compare" id="6" inline="true">
-                    <field name="OP">LT</field>
-                    <value name="A">
-                      <block type="sensor_object" id="7">
-                        <field name="OBJECT">LEFTFRONT</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="math_number" id="8">
-                        <field name="NUM">60</field>
-                      </block>
-                    </value>
+              <block type="robot_delay" id="17" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="24">
+                    <field name="NUM">1800</field>
                   </block>
                 </value>
-                <statement name="DO0">
-                  <block type="movement_stop" id="9"></block>
-                </statement>
+                <next>
+                  <block type="movement_right" id="34"></block>
+                </next>
               </block>
             </statement>
           </block>
         </next>
       </block>
     </next>
+  </block>
+  <block type="controls_if" id="5" inline="false" x="352" y="210">
+    <value name="IF0">
+      <block type="logic_compare" id="6" inline="true">
+        <field name="OP">LT</field>
+        <value name="A">
+          <block type="sensor_object" id="7">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="8">
+            <field name="NUM">60</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="movement_stop" id="9"></block>
+    </statement>
   </block>
 </xml>
