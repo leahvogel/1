@@ -11,14 +11,24 @@
         <statement name="DO">
           <block type="movement_forward" id="4">
             <next>
-              <block type="controls_if" id="29" inline="false">
+              <block type="controls_if" id="5" inline="false">
                 <value name="IF0">
-                  <block type="sensor_object" id="36">
-                    <field name="OBJECT">LEFTFRONT</field>
+                  <block type="logic_compare" id="14" inline="true">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="sensor_object" id="6">
+                        <field name="OBJECT">LEFTFRONT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="21">
+                        <field name="NUM">60</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_stop" id="46"></block>
+                  <block type="movement_stop" id="7"></block>
                 </statement>
               </block>
             </next>
