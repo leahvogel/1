@@ -4,12 +4,25 @@
       <block type="controls_whileUntil" id="2" inline="false">
         <field name="MODE">WHILE</field>
         <value name="NUMBER">
-          <block type="math_number" id="11">
+          <block type="math_number" id="3">
             <field name="NUM">1</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_forward" id="4"></block>
+          <block type="movement_forward" id="4">
+            <next>
+              <block type="controls_if" id="29" inline="false">
+                <value name="IF0">
+                  <block type="sensor_object" id="36">
+                    <field name="OBJECT">LEFTFRONT</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="movement_stop" id="46"></block>
+                </statement>
+              </block>
+            </next>
+          </block>
         </statement>
       </block>
     </next>
