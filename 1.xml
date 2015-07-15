@@ -1,15 +1,15 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="74" x="36" y="8">
+  <block type="oled_cleardisplay" id="1" x="52" y="29">
     <next>
-      <block type="controls_whileUntil" id="42" inline="false">
-        <field name="MODE">UNTIL</field>
+      <block type="controls_whileUntil" id="2" inline="false">
+        <field name="MODE">WHILE</field>
         <value name="NUMBER">
-          <block type="sensor_object" id="65">
-            <field name="OBJECT">LEFTFRONT</field>
+          <block type="math_number" id="11">
+            <field name="NUM">1</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_forward" id="19"></block>
+          <block type="movement_forward" id="4"></block>
         </statement>
       </block>
     </next>
