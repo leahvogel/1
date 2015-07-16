@@ -84,7 +84,7 @@
                                                               </block>
                                                             </value>
                                                             <next>
-                                                              <block type="movement_left" id="51">
+                                                              <block type="movement_left" id="26">
                                                                 <next>
                                                                   <block type="controls_whileUntil" id="27" inline="false">
                                                                     <field name="MODE">WHILE</field>
@@ -118,7 +118,7 @@
                                                                                       </block>
                                                                                     </value>
                                                                                     <next>
-                                                                                      <block type="movement_stutter" id="61"></block>
+                                                                                      <block type="movement_stutter" id="36"></block>
                                                                                     </next>
                                                                                   </block>
                                                                                 </statement>
