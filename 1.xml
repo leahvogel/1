@@ -89,9 +89,6 @@
                                                                                     <field name="NUM">4000</field>
                                                                                   </block>
                                                                                 </value>
-                                                                                <next>
-                                                                                  <block type="movement_stop" id="122"></block>
-                                                                                </next>
                                                                               </block>
                                                                             </next>
                                                                           </block>
