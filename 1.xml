@@ -84,41 +84,87 @@
                                                               </block>
                                                             </value>
                                                             <next>
-                                                              <block type="movement_left" id="26">
+                                                              <block type="movement_right" id="46">
                                                                 <next>
-                                                                  <block type="controls_whileUntil" id="27" inline="false">
+                                                                  <block type="controls_whileUntil" id="53" inline="false">
                                                                     <field name="MODE">WHILE</field>
                                                                     <value name="NUMBER">
-                                                                      <block type="math_number" id="28">
+                                                                      <block type="math_number" id="89">
                                                                         <field name="NUM">1</field>
                                                                       </block>
                                                                     </value>
                                                                     <statement name="DO">
-                                                                      <block type="robot_delay" id="29" inline="true">
+                                                                      <block type="robot_delay" id="64" inline="true">
                                                                         <value name="DELAY">
-                                                                          <block type="math_number" id="30">
+                                                                          <block type="math_number" id="81">
                                                                             <field name="NUM">1450</field>
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="movement_forward" id="31">
+                                                                          <block type="movement_forward" id="74">
                                                                             <next>
-                                                                              <block type="controls_whileUntil" id="32" inline="false">
+                                                                              <block type="controls_whileUntil" id="96" inline="false">
                                                                                 <field name="MODE">WHILE</field>
                                                                                 <value name="NUMBER">
-                                                                                  <block type="math_number" id="33">
+                                                                                  <block type="math_number" id="103">
                                                                                     <field name="NUM">1</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <statement name="DO">
-                                                                                  <block type="robot_delay" id="34" inline="true">
+                                                                                  <block type="robot_delay" id="105" inline="true">
                                                                                     <value name="DELAY">
-                                                                                      <block type="math_number" id="35">
-                                                                                        <field name="NUM">3600</field>
+                                                                                      <block type="math_number" id="112">
+                                                                                        <field name="NUM">2400</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <next>
-                                                                                      <block type="movement_stutter" id="36"></block>
+                                                                                      <block type="movement_left" id="26">
+                                                                                        <next>
+                                                                                          <block type="controls_whileUntil" id="27" inline="false">
+                                                                                            <field name="MODE">WHILE</field>
+                                                                                            <value name="NUMBER">
+                                                                                              <block type="math_number" id="28">
+                                                                                                <field name="NUM">1</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <statement name="DO">
+                                                                                              <block type="robot_delay" id="29" inline="true">
+                                                                                                <value name="DELAY">
+                                                                                                  <block type="math_number" id="30">
+                                                                                                    <field name="NUM">1450</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="movement_forward" id="31">
+                                                                                                    <next>
+                                                                                                      <block type="controls_whileUntil" id="32" inline="false">
+                                                                                                        <field name="MODE">WHILE</field>
+                                                                                                        <value name="NUMBER">
+                                                                                                          <block type="math_number" id="33">
+                                                                                                            <field name="NUM">1</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <statement name="DO">
+                                                                                                          <block type="robot_delay" id="34" inline="true">
+                                                                                                            <value name="DELAY">
+                                                                                                              <block type="math_number" id="35">
+                                                                                                                <field name="NUM">3600</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <next>
+                                                                                                              <block type="movement_stutter" id="36"></block>
+                                                                                                            </next>
+                                                                                                          </block>
+                                                                                                        </statement>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </statement>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
                                                                                     </next>
                                                                                   </block>
                                                                                 </statement>
