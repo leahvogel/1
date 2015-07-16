@@ -1,14 +1,14 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1" x="-570" y="-413">
-    <next>
-      <block type="controls_whileUntil" id="2" inline="false">
-        <field name="MODE">WHILE</field>
-        <value name="NUMBER">
-          <block type="math_number" id="3">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <statement name="DO">
+  <block type="controls_whileUntil" id="2" inline="false" x="-608" y="-391">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="math_number" id="3">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="1">
+        <next>
           <block type="robot_delay" id="4" inline="true">
             <value name="DELAY">
               <block type="math_number" id="5">
@@ -123,8 +123,8 @@
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
